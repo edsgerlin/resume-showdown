@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <title>John Doe's Résumé</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/normalize-7.0.0.min.css">
+    <style></style>
+</head>
+
+<body>
+    <pre>
+        <code id="markdown">
+                                JOHN DOE
+========================================================================
+                                Contact
+------------------------------------------------------------------------
+Email: [john@doe.com](mailto:john@doe.com)
+
+Tel: [+1-000-000-0000](tel:+1-000-000-0000)
+
+Telegram: [https://t.me/john.doe](https://t.me/john.doe)
+
+Website: [John Doe's Website](https://john.doe.com)
+                               Education
+------------------------------------------------------------------------
+### Clayton University, Oceania
+#### College of Arts
+* Bachelor of Arts in Social Justice Studies
+* Cumulative GPA 3.9
+* Joined the The `Ingsoc`
+* From 1984 To 1989
+                                 Skills
+------------------------------------------------------------------------
+* Being Politically Correct
+* White Guilt
+* Loyalty to The `Big Brother`
+                               Experience
+------------------------------------------------------------------------
+### The Government of Oceania
+#### The Ministry of Truth
+##### Thought Police
+* Classified
+* Classified
+* From 1989 To 2012
+        </code>
+    </pre>
+    <script src="js/showdown-1.7.4.min.js"></script>
+    <script>
+        document.body.innerHTML = new showdown.Converter().
+        makeHtml(document.getElementById('markdown').innerHTML);
+    </script>
+</body>
+
+</html>
